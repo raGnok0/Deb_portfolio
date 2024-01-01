@@ -68,7 +68,7 @@
     margin-top: -8pc; /* eta change krte hbe */
 }
 .name-animation{
-    display: flex;
+    /* display: flex; */
     /* border: 2px solid blue; */
 }
 
@@ -155,6 +155,7 @@
     animation-delay: calc((var(--scroll)*-1s));
     animation-fill-mode: both;
 }
+
 /* .a{
     animation: move-words 10s linear infinite;
 
@@ -242,6 +243,7 @@
     font-family: 'DM Sans',sans-serif;
     font-size: larger;
 }
+
 /* recent work section */
 .recent-works{
     width: 90%;
@@ -287,13 +289,14 @@
 .work-title-recent h3{
     font-weight: 500;
 }
-.pop-up{
+/* .pop-up{
     border: 2px solid red;
     transform: scale(0);
     position: relative;
     cursor: pointer;
     
-}
+} */
+
 /* animation section */
 section{
     /* border: 2px solid red; */
@@ -511,6 +514,7 @@ section{
     color: azure;
 }
 
+
 /* animation divs */
 @keyframes text-upgoing-animate {
     0%{
@@ -532,6 +536,164 @@ section{
 .clicky-btn-animate{
     transform: translateY(0);
     /* transition: 1s ease-in-out; */
+}
+@media screen and (max-width: 800px){
+    .primary-first-screen{
+        height: 35pc;
+        width: 100%;
+        /* border: 2px solid red; */
+        overflow: visible;
+    }
+    .first-screen{
+        background-position: center 0pc;
+        height: 39pc;
+        overflow: visible;
+        width: 100%;
+        /* border: 2px solid black; */
+        position: absolute;
+        transform: translateY(-6.4pc);
+    }
+    /* .navbar{
+        transform: scale(0);
+    } */
+    .navbar ul li{
+        margin: auto;
+    }
+    .right-nav{
+        transform: scale(0);
+    }
+    .mid-section{
+        transform: scale(0);
+    }
+    .name{
+        transform: translateX(-20pc) rotate(90deg);
+        margin-top: 1px;
+    }
+    .name-animation h1{
+        font-size: 9pc;
+    }
+    .banner{
+        transform: translateY(-3.5pc);
+        /* border: 2px solid red; */
+    }
+    .banner-animation p{
+        font-size: 20px;
+        animation: move-words 300ms linear infinite;
+        animation-play-state: paused;
+        animation-iteration-count: 1;
+        animation-delay: calc((var(--scroll)*-1s));
+        animation-fill-mode: both;
+    }
+    .primary-second-screen{
+        /* border: 2px solid red; */
+        /* border-radius: 0 0 200px 200px; */
+        overflow: hidden;
+        height: 78pc;
+    }
+    .second-screen{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .brand-talk{
+        /* transform: translateX(-20pc); */
+        width: 20pc;
+        margin: auto;
+        /* border: 2px solid blue; */
+    }
+    .brand-talk h1{
+        /* text-wrap: balance; */
+        text-align: center;
+    }
+    .my-ambition{
+        margin: auto;
+        margin-top: 2pc;
+    }
+    .my-ambition h3{
+        text-align: center;
+    }
+    .magnetic-btn{
+        margin-left: 9pc;
+        margin-top: 1pc;
+    }
+    .work-name-recent {
+        font-size: 15px;
+        margin-left: 1pc;
+        /* border: 2px solid blue; */
+        overflow: visible;
+    }
+    .work-title-recent{
+        overflow: visible;
+        margin-left: 1pc;
+        margin-top: 1pc;
+        font-size: 14px;
+        /* border: 2px solid red; */
+    }
+    section{
+        /* border: 2px solid red; */
+        border-radius: 0 0 160px 160px;
+    }
+    .upper1{
+        height: fit-content;
+    }
+    .upper2{
+        margin-top: 0pc;
+    }
+    .upper1 img{
+        width: 70px;
+        height: 70px;
+    }
+    .upper1 h1{
+        font-size: 50px;
+        margin-left: 1pc;
+    }
+    .upper2 h1{
+        font-size: 50px;
+        margin-top: -0.5pc;
+    }
+    .upper2 img{
+        margin-left: 6pc;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer1{
+        width: 20pc;
+    }
+    .footer-animate{
+        transform: translateY(-5pc);
+    }
+    
+    .lower{
+        flex-direction: column;
+    }
+    .button{
+        width: 15pc;
+        margin-top: 2pc;
+    }
+    .number{
+        margin: auto;
+        margin-top: 1pc;
+    }
+    .clicky-btn-outer{
+        margin: auto;
+    }
+    .footer-title{
+        overflow: visible;
+    }
+    .footer-title ul li{
+        font-size: 12px;
+        margin: 1px;
+        margin-left: 10px;
+    }
+    .footer-links ul li{
+        font-size: 12px;
+        margin: 1px;
+        margin-left: 9px;
+    }
+    .social-links{
+        margin-left: 0pc;
+    }
 }
 @keyframes move-words {
     0%{
