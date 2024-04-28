@@ -282,7 +282,7 @@
     font-family: 'DM Sans',sans-serif;
     /* margin: auto; */
     margin-top: 3pc;
-    margin-left: 30pc;
+    margin-left: 18pc;
     height: fit-content;
     width: fit-content;
 }
@@ -299,7 +299,7 @@
 
 /* animation section */
 section{
-    /* border: 2px solid red; */
+    /* border: 50px solid black; */
     height: 50pc;
 }
 .first-animation{
@@ -531,7 +531,7 @@ section{
 }
 .footer-animate{
     margin-top: 15pc;
-    transform: translateY(-10pc);
+    transform: translateY(-5pc);
 }
 .clicky-btn-animate{
     transform: translateY(0);
